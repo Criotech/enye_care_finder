@@ -33,7 +33,7 @@ const Footer = (props:any) => {
         <div className="Footer">
             <div className="footerContentContainer">
                 <div>
-                <button className="circlebtn1" onClick={fetchHistory}       >
+                <button className="circlebtn1" onClick={fetchHistory}    >
                     {(historyStatus)? <Spin size="large" />: <HistoryOutlined style={{fontWeight: "bold"}} /> }
                 </button>
                 </div>

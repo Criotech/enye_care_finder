@@ -17,7 +17,7 @@ const Hospitals = (props: any) => {
 
     const viewMap = (props: any) => {
         toggleStatus(!status)
-        axios.post('https://freeplace.herokuapp.com//places', {
+        axios.post('https://freeplace.herokuapp.com/places', {
             name: props.name,
             vicinity: props.vicinity,
             radius: props.radius,
