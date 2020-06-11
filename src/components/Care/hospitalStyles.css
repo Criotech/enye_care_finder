@@ -1,0 +1,35 @@
+.title {
+    height: 10vh;
+    font-size: large;
+    color: #fff;
+    background-color: #722359;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.hospitalContainer {
+    width: 1000px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: #722359 solid 1px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.hospitalDetails {
+    flex: 1;
+}
+
+.hospitalContainer h3 {
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #000;
+}
+
+.hospitalContainer p {
+    letter-spacing: 2px;
+    color: grey;
+}

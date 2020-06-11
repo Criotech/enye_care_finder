@@ -1,0 +1,65 @@
+.searchInputBox {
+    position: absolute;
+    top: 20px;
+    width: 100%
+}
+
+.inputWrapper {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    background-color: #fff;
+    opacity: 0.9;
+}
+
+.inputFlex {
+    display: flex;
+}
+
+.Footer {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+.footerWrapper {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.circlebtn1 {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: 0;
+    background-color: #722359;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    outline: none;
+}
+
+.circlebtn1:hover {
+    color: #722359;
+    background-color: #fff;
+}
+
+.circlebtn2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: 0;
+    background-color: #722359;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+}
+
+.circlebtn2:hover {
+    color: #722359;
+    background-color: #fff;
+}

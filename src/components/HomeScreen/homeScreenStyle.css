@@ -1,0 +1,60 @@
+.Home {
+    background-color: #722359;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerw {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.topw, .bottomw {
+    color: #fff;
+}
+
+.topw h1 {
+    font-size: 35px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.topw p {
+    margin-top: -20px;
+    letter-spacing: 2px;
+}
+
+.btn {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 15px 25px;
+    background-color: #fff;
+    color: '#000';
+    font-weight: bold;
+    border: 0;
+    border-radius: 25px;
+    outline: none;
+}
+
+.btn:hover {
+    color: #A2A2A2;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.botton p {
+    font-size: 16px;
+}
+
+.p2{
+    font-weight: bold;
+    margin-top: -10px;
+}
