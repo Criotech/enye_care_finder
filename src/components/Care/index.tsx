@@ -43,7 +43,7 @@ const Hospitals = (props: any) => {
                                 {
                                     type==='main' &&
                                     <div className="mapBtn">
-                                        <button onClick={() => viewMap({ location: item.geometry.location | item.location[0], name: item.name, vicinity: item.vicinity, radius: radius })}>{(status) ? (<Spin size="small" />) : 'View on map'}</button>
+                                        <button onClick={() => viewMap({ location: item.geometry.location, name: item.name, vicinity: item.vicinity, radius: radius })}>{(status) ? (<Spin size="small" />) : 'View on map'}</button>
                                     </div>
                                 }
 
