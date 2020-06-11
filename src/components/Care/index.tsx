@@ -5,7 +5,7 @@ import axios from 'axios';
 import './hospitalStyles.css';
 
 const Hospitals = (props: any) => {
-    let type: string = 'main';
+    let type: any;
     let history = useHistory();
     const hospitalData = props.location.state.hospitalData;
     const radius = props.location.state.radius;
@@ -43,7 +43,7 @@ const Hospitals = (props: any) => {
                                 {
                                     type==='main' &&
                                     <div className="mapBtn">
-                                        <button onClick={() => viewMap({ location: item.geometry.location | item.location[0], name: item.name, vicinity: item.vicinity, radius: radius })}>{(status) ? <Spin size="small" /> : 'View on map'}</button>
+                                        <button onClick={() => viewMap({ location: item.geometry.location | item.location[0], name: item.name, vicinity: item.vicinity, radius: radius })}>{(status) ? (<Spin size="small" />) : 'View on map'}</button>
                                     </div>
                                 }
 

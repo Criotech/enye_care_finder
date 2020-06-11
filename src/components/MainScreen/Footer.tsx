@@ -9,6 +9,7 @@ const Footer = (props:any) => {
     let history = useHistory();
     const [status, changeStatus] = useState<boolean>(false)
     const [historyStatus, changeHistoryStatus] = useState<boolean>(false)
+
     const fetchHospitals =  () => {
         changeStatus(true)
         axios.get(`https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${props.lat},${props.lng}&type=${props.searchType}&radius=${props.radius}&key=AIzaSyBxjbTCoo-xXCJ-ms2SaqSTsz1jMjqLi5M`, {
@@ -18,7 +19,7 @@ const Footer = (props:any) => {
               },
         })
         .then((result:any)=>{
-            history.push('/hospitals', {hospitalData: result.data.results, radius: props.radius});
+            history.push('/hospitals', {hospitalData: result.data.results, radius: props.radius, type: 'main'});
         })
     }
 
