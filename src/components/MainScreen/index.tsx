@@ -12,7 +12,8 @@ interface Props {
 }
 
 const Main: React.FC<Props> = (props:any) => {
-    let careLocation
+    let careLocation;
+    let careName;
     const [center, setCenter] = useState<any|null>(null);
     const [activeMarker, setActiveMarker] = useState<any|null>({});
     const [showingInfoWindow, setShowingWindow] = useState<boolean>(false);
@@ -51,10 +52,12 @@ const Main: React.FC<Props> = (props:any) => {
 
     if (props.location.state && props.location.state.center !== undefined) {
      careLocation= props.location.state.center;
+     careName = props.location.state.name;
      setTimeout(() => {
       setRadius(props.location.state.radius)
      }, 2000);
     }
+
 
     return (
         <div className="Main">
@@ -87,7 +90,7 @@ const Main: React.FC<Props> = (props:any) => {
                 }
                 <InfoWindow marker={activeMarker} google={props.google} map={props.map} visible={showingInfoWindow}>
                     <div>
-                    <h1>hello</h1>
+              <h1>{careName && careName}</h1>
                     </div>
                   </InfoWindow>
         {
